@@ -1,5 +1,5 @@
 # Site settings
-baseurl = "http://www.seifsayed.com/seifsay3d.github.io/"
+baseurl = "http://www.seifsay3d.github.io/"
 # HTML Language Code Reference, such as en, zh-cn
 languageCode = "en"
 title = "Seif Sayed | Frontend Developer"
