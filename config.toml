@@ -1,0 +1,77 @@
+# Site settings
+baseurl = "http://www.seifsayed.com/"
+# HTML Language Code Reference, such as en, zh-cn
+languageCode = "en"
+title = "Seif Sayed | Frontend Developer"
+theme = "hugo-theme-cactus-plus"
+# Enter your tracking code to enable Google Analytics
+googleAnalytics = "UA-98787361-1"
+hasCJKLanguage = true
+
+[params]
+  name = "Seif Sayed"
+  description = "Currently @Nbhood, Previously @Equation."
+  bio = """Programmer- Juggler - Biker"""
+
+  # Enter optionally your twitter account
+  twitter = "https://twitter.com/SeifSayed"
+  enableRSS = false
+
+  # Disqus comment
+  disqusShortname = "seif_sayed"
+  # Disable disqus comments by set `enableDisqus = "false"`
+  enableDisqus = true
+
+  # Duoshuo comment
+  duoshuoShortname = "your_duoshuo_short_name"
+  # Disable duoshuo comments by set `enableDuoshuo = "false"`
+  enableDuoshuo = false
+
+  enableGithubIssuesTips = false
+
+  # Enable googleAnalytics
+  enableGoogleAnalytics = true
+
+  # Enable baiduAnalytics
+  enableBaiduAnalytics = false
+  # Baidu Tongji Code
+  baiduAnalytics = 'your_baidu_tongji_code'
+
+  # Add custom assets with their paths relative to the static folder
+  customCSS = ['css/custom.css']
+  customJS  = []
+
+  # The variables below are optionally too and can be used to
+  # translate or customize each string of the theme.
+
+  # Navigation links
+  home = ""
+  about = ""
+  archive = "Blog"
+  subscribe = ""
+  # Pagination links
+  olderPosts = ""
+  newerPosts = ""
+  readMore = ""
+  copyright = ""
+  # Sharing options and author information in posts
+  aboutAuthor = "I am so interesting."
+  tweet = ""
+  share = ""
+  # 404 page
+  title404 = "You're Lost"
+  subtitle404 = "You're probably here by a mistake."
+
+  # Choose a font for the social icons in the footer. Either "mono-social" or "font-awesome"
+  iconFont = "font-awesome"
+  # The social icons can be styled differently if you use mono as font - circle, rounded, or empty
+  socialIconStyle = ""
+
+
+# Add additional social link entries underneath
+[social]
+  twitter = "https://twitter.com/SeifSayed"
+  github = "https://github.com/seifsay3d"
+  address-card = "https://docs.google.com/document/d/1xwpHw6HWut-_-MErpV_PaatonPz_hzvto_RrMkx3fv0/pub"
+  codepen = "http://codepen.io/seifsayed/"
+  stack-overflow = "http://stackoverflow.com/users/story/3302028"
