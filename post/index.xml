@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Seif Sayed | Frontend Developer</title>
-    <link>https://seifsay3d.github.io/seifsay3ed.github.io/post/</link>
+    <link>https://seifsay3d.github.io/post/</link>
     <description>Recent content in Posts on Seif Sayed | Frontend Developer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 07 May 2017 20:00:55 +0200</lastBuildDate>
     
-	<atom:link href="https://seifsay3d.github.io/seifsay3ed.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://seifsay3d.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Write faster with declarative programming</title>
-      <link>https://seifsay3d.github.io/seifsay3ed.github.io/post/write-faster-with-declarative-programming/</link>
+      <link>https://seifsay3d.github.io/post/write-faster-with-declarative-programming/</link>
       <pubDate>Sun, 07 May 2017 20:00:55 +0200</pubDate>
       
-      <guid>https://seifsay3d.github.io/seifsay3ed.github.io/post/write-faster-with-declarative-programming/</guid>
+      <guid>https://seifsay3d.github.io/post/write-faster-with-declarative-programming/</guid>
       <description>Declarative programming is often referred to with Imperative programming. Before diving in deeper lets make sure the difference is clear. Imperative programming is when you tell the computer how to perform a task by giving it a set of instruction. Declarative programming is when you tell the computer what you want to be done without having to worry about how is it going to be done.
 A nice analogy is if someone asks where do you live?</description>
     </item>
