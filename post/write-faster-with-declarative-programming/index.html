@@ -1,0 +1,207 @@
+    <!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Seif Sayed">
+		<meta name="description" content="Currently @Nbhood, Previously @Equation.">
+		<meta name="generator" content="Hugo 0.20.7" />
+		<title>Write faster with declarative programming &middot; Seif Sayed | Frontend Developer</title>
+		<link rel="shortcut icon" href="https://seifsayed.comimages/favicon.ico">
+		<link rel="stylesheet" href="https://seifsayed.comcss/style.css">
+		<link rel="stylesheet" href="https://seifsayed.comcss/highlight.css">
+		
+		<link rel="stylesheet" href="https://seifsayed.comcss/custom.css">
+		
+
+		
+		<link rel="stylesheet" href="https://seifsayed.comcss/font-awesome.min.css">
+		
+
+		
+	</head>
+
+    <body>
+       <nav class="main-nav">
+  
+  
+    <a href='https://seifsayed.com'> <span class="arrow" style="font-size:20px">←</span></a>
+  
+  <a href='https://seifsayed.compost'>Blog</a>
+
+  
+
+  
+</nav>
+
+
+        <section id="wrapper">
+            <article class="post">
+                <header>
+                    <h1>
+                        Write faster with declarative programming
+                    </h1>
+                    <h2 class="headline">
+                    May 7, 2017 20:00
+                    · 487 words
+                    · 3 minutes read
+                      <span class="tags">
+                      
+                      </span>
+                    </h2>
+                </header>
+                
+                <section id="post-body">
+                    
+
+<p>Declarative programming is often referred to with Imperative programming. Before diving in deeper lets make sure the difference is clear.
+<strong>Imperative programming</strong> is when you tell the computer <strong>how</strong> to perform a task by giving it a set of instruction. <strong>Declarative programming</strong> is when you tell the computer <strong>what</strong> you want to be done without having to worry about how is it going to be done.</p>
+
+<p>A nice analogy is if someone asks where do you live?</p>
+
+<p><strong>Imperative Approach</strong>: Go out of the main building, cross two streets and the take a right just after Mcdonald&rsquo;s. Right next to the tall building you&rsquo;ll find my house #100.</p>
+
+<p><strong>Declarative Approach</strong>: 100 Dokki st, Egypt.</p>
+
+<p>You can see how easy it is to tell someone your address declaratively. Not only because it&rsquo;s shorter but also because it doesn&rsquo;t matter where the person is. Putting in mind that declarative approaches usually depends on an abstract imperative layer, in this scenario Google Maps for example.</p>
+
+<h3 id="declarative-programming-and-frontend">Declarative Programming and Frontend</h3>
+
+<p>The web has been going through very fast changes, specially the frontend scene. One of the great game changer is how frameworks like React and Vue adopted declarative programming.</p>
+
+<blockquote>
+<p>A classic example is Doubling all elements in an array.</p>
+</blockquote>
+
+<pre><code class="language-javascript">function double (arr) {
+  let result = [];
+  for (let i = 0 ; i &lt; arr.length ; i++){
+    result.push(arr[i] * 2);
+  }
+  return result;
+}
+</code></pre>
+
+<pre><code class="language-javascript">function double (arr) {
+  return arr.map((item) =&gt; item *2 );
+}
+</code></pre>
+
+<p>Instead of explicitly defining everything that happens we rely on an imperative layer <code>.map</code> and let it handle the work for us, leaving only the <strong>what</strong> for us to do.</p>
+
+<blockquote>
+<p>Another classic example is if we want to manipulate an element when a button is clicked.</p>
+</blockquote>
+
+<pre><code class="language-javascript">$('#btn').click(function(){
+  if($(this).text() == 'Enable'){
+    $(this).text('Disable');
+    $('#name').attr('disabled',false);
+  }
+  else{
+    $(this).text('Enable');
+    $('#name').attr('disabled',true);
+  }
+});
+</code></pre>
+
+<pre><code class="language-html">&lt;button v-on:click=&quot;toggleState()&quot;&gt;{{ stateText }}&lt;/button&gt;
+&lt;input type=&quot;text&quot; disabled=&quot;{{state}}&quot;&gt;
+</code></pre>
+
+<p>On the view layer the goal is to map a state to a view, and whenever this state is changed the view automatically gets changed. The problem is that manipulating the DOM and rerendering all the elements all the time is very costly and would hurt performance causing flickering.</p>
+
+<p>Fourtunately, with &lsquo;Virtual DOM&rsquo; this is all possible. A Virtual DOM is simillar to the real DOM but without the ability to change what is on the screen. Whenever an update occurs, it is reflected in the virtual DOM, then the virtual DOM gets compared with the real DOM and only the part that needs to be changed is redrawn.</p>
+
+<p>I have started using declarative methods and using frameworks such as Vuejs and it has been really helpful as I&rsquo;m able to write faster, readable and maintainable code. If you haven&rsquo;t tried out declarative programming yet, I think you should start by using Vuejs as it&rsquo;s learning curve is very smooth.</p>
+
+<p>If you want to read more about declarative programming checkout this video <a href="https://www.youtube.com/watch?v=yGh0bjzj4IQ">https://www.youtube.com/watch?v=yGh0bjzj4IQ</a>  or if you are a reading person <a href="https://www.smashingmagazine.com/2014/07/declarative-programming/">https://www.smashingmagazine.com/2014/07/declarative-programming/</a></p>
+
+                </section>
+            </article>
+
+            
+
+            
+                <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'seifsayed.disqus.com'; 
+
+     
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+            
+
+            
+
+            <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    <a class="symbol" href="https://docs.google.com/document/d/1xwpHw6HWut-_-MErpV_PaatonPz_hzvto_RrMkx3fv0/pub">
+        <i class="fa fa-address-card"></i>
+    </a>
+    
+    <a class="symbol" href="http://codepen.io/seifsayed/">
+        <i class="fa fa-codepen"></i>
+    </a>
+    
+    <a class="symbol" href="https://github.com/seifsay3d">
+        <i class="fa fa-github"></i>
+    </a>
+    
+    <a class="symbol" href="http://stackoverflow.com/users/story/3302028">
+        <i class="fa fa-stack-overflow"></i>
+    </a>
+    
+    <a class="symbol" href="https://twitter.com/SeifSayed">
+        <i class="fa fa-twitter"></i>
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+    </p>
+</footer>
+
+        </section>
+
+        <script src="https://seifsayed.comjs/jquery-2.2.4.min.js"></script>
+<script src="https://seifsayed.comjs/main.js"></script>
+<script src="https://seifsayed.comjs/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+  
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-98787361-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+
+
+
+    </body>
+</html>

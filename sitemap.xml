@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://seifsayed.com/post/write-faster-with-declarative-programming/</loc>
+    <lastmod>2017-05-07T20:00:55+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://seifsayed.com/tags/</loc>
+    <lastmod>2015-06-20T14:02:37+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://seifsayed.com/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://seifsayed.com/post/</loc>
+    <lastmod>2017-05-07T20:00:55+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://seifsayed.com/</loc>
+    <lastmod>2017-05-07T20:00:55+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

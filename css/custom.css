@@ -1,0 +1,16 @@
+#wrapper{
+  max-width: 700px;
+}
+.profile #avatar{
+  width:130px;
+  height:130px;
+}
+nav.main-nav a {
+    color: #6a6d6d;
+}
+a.symbol{
+  color: #abadad;
+}
+a.symbol:hover {
+   color: #6a6d6d;  
+}
