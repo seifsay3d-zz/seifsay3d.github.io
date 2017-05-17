@@ -2,28 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://seifsay3d.github.io/post/write-faster-with-declarative-programming/</loc>
+    <loc>/post/write-faster-with-declarative-programming/</loc>
     <lastmod>2017-05-07T20:00:55+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://seifsay3d.github.io/tags/</loc>
+    <loc>/tags/</loc>
     <lastmod>2015-06-20T14:02:37+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://seifsay3d.github.io/categories/</loc>
+    <loc>/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://seifsay3d.github.io/post/</loc>
+    <loc>/post/</loc>
     <lastmod>2017-05-07T20:00:55+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://seifsay3d.github.io/</loc>
+    <loc>/</loc>
     <lastmod>2017-05-07T20:00:55+02:00</lastmod>
     <priority>0</priority>
   </url>
