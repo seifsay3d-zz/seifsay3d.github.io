@@ -1,0 +1,172 @@
+    <!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Seif Sayed">
+		<meta name="description" content="Currently @Nbhood, Previously @Equation.">
+		<meta name="generator" content="Hugo 0.20.7" />
+		<title>our journey to spa - part #1 &middot; Seif Sayed | Frontend Developer</title>
+		<link rel="shortcut icon" href="/images/favicon.ico">
+		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/css/highlight.css">
+		
+		<link rel="stylesheet" href="/css/custom.css">
+		
+
+		
+		<link rel="stylesheet" href="/css/font-awesome.min.css">
+		
+
+		
+	</head>
+
+    <body>
+       <nav class="main-nav">
+  
+  
+    <a href='/'> <span class="arrow" style="font-size:20px">←</span></a>
+  
+  <a href='/post'>Blog</a>
+
+  
+
+  
+</nav>
+
+
+        <section id="wrapper">
+            <article class="post">
+                <header>
+                    <h1>
+                        our journey to spa - part #1
+                    </h1>
+                    <h2 class="headline">
+                    May 18, 2017 00:02
+                    · 398 words
+                    · 2 minutes read
+                      <span class="tags">
+                      
+                      </span>
+                    </h2>
+                </header>
+                
+                <section id="post-body">
+                    <p>1 year ago we started writing @yard using symfony2 for the backend and twigs for templating. Having been constantly changing and evolving lots of code were written and the code base grew. Maintaining the code base became difficult and very time consuming. So we decided to quit on the &ldquo;old-school&rdquo; client-server app and move towards a SPA[link to spa]. We had to migrate our current system to SPA and also keep writing new features so they had to be done simultaneously.</p>
+
+<p>We chose Vuejs as we thought it was a perfect fit for our needs, Vuejs is very easy to use if you know your way around HTML,CSS and JS. It&rsquo;s also very minimal and that was exactly what we needed to fix our problems.</p>
+
+<p>Migrating made it easy to start getting rid of technical debt.</p>
+
+<ol>
+<li><strong>Manage all static files using npm</strong></li>
+</ol>
+
+<p>Our static files were not managed by any tool so we didn&rsquo;t have huge control of the versions of the plugins we&rsquo;ve been using nor did we know their dependencies. We&rsquo;ve tried bower and wiredep but not all plugins had bower support so we used npm to manage dependencies.</p>
+
+<ol>
+<li><strong>Build System</strong></li>
+</ol>
+
+<p>We had no build systems we were serving lots of js/css files and we wanted to cut the number down. We tried npm scripts to minimize the number of tools and use npm for both building and installing but it was very low level and some tasks were very lengthy so we chose Gulp and Browserify to build our javascript files. This did not only help us reduce the number of files, but also made us able to introduce scss to write css.</p>
+
+<p>Having Build Systems and managing dependencies helped us get rid all unnecessary plugins that we have been using, upgrade our plugins and have an awesome &ldquo;package.json&rdquo; file.</p>
+
+<ol>
+<li><strong>Introducing Vuejs</strong></li>
+</ol>
+
+<p>We wanted to start leverage the gains of having separate client app. But we couldn&rsquo;t do that because the app was so big we couldn&rsquo;t afford a major rewrite. We started migrating basic components such as the header,footer components. We also added tooltips components, charts and tables.</p>
+
+<p>Having components have greatly increased our development time, we were also able to to seperate the frontend work from the backend work and thus reducing time where teams interact.</p>
+
+<p>That&rsquo;s our progress so far, we can&rsquo;t wait completely separating the client app from the server :).</p>
+
+                </section>
+            </article>
+
+            
+
+            
+                <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'seifsayed.disqus.com'; 
+
+     
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+            
+
+            
+
+            <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    <a class="symbol" href="https://docs.google.com/document/d/1xwpHw6HWut-_-MErpV_PaatonPz_hzvto_RrMkx3fv0/pub">
+        <i class="fa fa-address-card"></i>
+    </a>
+    
+    <a class="symbol" href="http://codepen.io/seifsayed/">
+        <i class="fa fa-codepen"></i>
+    </a>
+    
+    <a class="symbol" href="https://github.com/seifsay3d">
+        <i class="fa fa-github"></i>
+    </a>
+    
+    <a class="symbol" href="http://stackoverflow.com/users/story/3302028">
+        <i class="fa fa-stack-overflow"></i>
+    </a>
+    
+    <a class="symbol" href="https://twitter.com/SeifSayed">
+        <i class="fa fa-twitter"></i>
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+    </p>
+</footer>
+
+        </section>
+
+        <script src="/js/jquery-2.2.4.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+  
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-98787361-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+
+
+
+    </body>
+</html>
